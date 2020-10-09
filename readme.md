@@ -1,3 +1,3 @@
-#Skeleton App
+#Lab 5 Solution
 
-This is a very basic skeleton express app you can use to build from on labs and projects.
+Here's the solution for lab 5.

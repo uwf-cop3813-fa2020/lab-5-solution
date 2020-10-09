@@ -1,14 +1,15 @@
 {
-  "name": "skeleton",
+  "name": "lab-5",
   "version": "1.0.0",
-  "description": "This is a simple app to get you started. Change the description as needed.",
+  "description": "Lab 5 solution.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Your Name Here",
+  "author": "E.L. Fridge",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0"
   }

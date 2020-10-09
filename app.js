@@ -2,6 +2,10 @@ const express = require('express');
 
 let app = express();
 
+// Set up body parser for form handling
+const bodyParser = require('body-parser');
+app.use( bodyParser.urlencoded({extended: true}) );
+
 // set up handlebars view engine
 let handlebars = require('express-handlebars')
 	.create({ defaultLayout:'main' });
@@ -15,6 +19,13 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
 	res.render('home');
+});
+
+app.post('/register', function(req, res) {
+	res.render('thanks', {
+		name: req.body.fullName,
+		book: req.body.book
+	});
 });
 
 // 404 catch-all handler (middleware)

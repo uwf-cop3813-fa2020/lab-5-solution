@@ -1,0 +1,10 @@
+<h1>Thanks for registering {{name}}</h1>
+
+{{#if book}}
+  <p>
+    Here's a link to your favorite book: <strong>{{book}}</strong>
+    <a href="https://www.amazon.com/s?k={{book}}">Search for your favorite book on Amazon!</a>
+  </p>
+{{else}}
+  <p>You should read more!</p>
+{{/if}}
